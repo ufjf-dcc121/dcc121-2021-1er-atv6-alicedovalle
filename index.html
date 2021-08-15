@@ -475,20 +475,24 @@
         console.log(this.classList);
         if (this.classList.contains("parede")) {
           this.classList.remove("parede");
+          console.log(this.classList);
           return 0;
         }
         if (this.classList == "") {
           this.classList.add("celOrc");
+          console.log(this.classList);
           return 0;
         }
         if (this.classList.contains("celOrc")) {
           this.classList.remove("celOrc");
           this.classList.add("celTesouro");
+          console.log(this.classList);
           return 0;
         }
         if (this.classList.contains("celTesouro")) {
           this.classList.remove("celTesouro");
           this.classList.add("parede");
+          console.log(this.classList);
           return 0;
         }
       }
