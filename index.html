@@ -471,7 +471,11 @@
     </table>
     <script>
       const celulas = document.querySelectorAll("td");
+      function callback(event) {
+        console.log(this.classList);
+      }
       for (let i = 0; i < celulas.length; i++) {
+        celulas[i].addEventListener("click", callback, false);
         if (celulas[i].classList == "") {
           celulas[i].classList.add("parede");
         }
